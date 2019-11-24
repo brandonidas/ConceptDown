@@ -1,0 +1,14 @@
+﻿@page "/concept"
+
+<div class="panel panel-default">
+    @*<div class="panel-heading">@concept.Name</div>*@
+    <div class="panel-body">@ChildContent</div>
+</div>
+
+@code {
+    [Parameter]
+    public Concept concept { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

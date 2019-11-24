@@ -1,0 +1,59 @@
+@page "/courses"
+@inject HttpClient Http
+
+<h1>Courses</h1>
+
+@if (courseReq.Courses == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>            
+            @foreach (var course in courseReq.Courses)
+            {
+                <tr>
+                    <td>@course.Name</td>
+                    <td>@course.Priority</td>
+                    <td>@course.Summary</td>
+                    <!-- @foreach (var topic in course.Topics) 
+                    {
+                        <tr>
+                            <td>@topic.Name</td>
+                            <td>@topic.Priority</td>
+                            <td>@topic.Mastery</td>
+                        </tr>
+                    } -->
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+}
+
+@code {
+    private CoursesRequest courseReq = new CoursesRequest();
+
+    protected override async Task OnInitializedAsync()
+    {
+        courseReq.Courses = await Http.GetJsonAsync<Course[]>("sample-data/sample-courses.json");
+        
+    }
+    public class CoursesRequest
+    {
+        public Course[] Courses { get; set; }
+        // needs thie CoursesRequest object for
+        // file to link to Concept Class for some reason
+
+    }
+
+}
