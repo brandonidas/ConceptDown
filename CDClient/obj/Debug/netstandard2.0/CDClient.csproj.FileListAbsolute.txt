@@ -67,11 +67,9 @@
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/App.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Concept.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Counter.razor.g.cs
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/FetchData.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Index.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Shared/NavMenu.razor.g.cs
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/_Imports.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/CDClient.dll
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/CDClient.TagHelpers.input.cache
@@ -80,11 +78,9 @@
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/App.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Concept.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Counter.razor.g.cs
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/FetchData.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Index.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Shared/MainLayout.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Shared/NavMenu.razor.g.cs
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Shared/SurveyPrompt.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/_Imports.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/CDClient.AssemblyInfoInputs.cache
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/CDClient.AssemblyInfo.cs
@@ -131,9 +127,5 @@
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/blazor/linker/CDClient.pdb
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/blazor/inputs.bootjson.cache
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/blazor/blazor.boot.json
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/ZCourse.razor.g.cs
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/ZCourse.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Courses.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Courses.razor.g.cs
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Topics.razor.g.cs
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Topics.razor.g.cs

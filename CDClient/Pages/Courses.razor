@@ -23,19 +23,24 @@ else
             {
                 <tr>
                     <td>@course.Name</td>
-                    <td>@course.Priority</td>
-                    <td>@course.Summary</td>
+                    <!-- <td>@course.Priority</td> -->
                     @foreach (var topic in course.Topics) 
                     {
                         <tr>
                             <td>@topic.Name</td>
-                            <td>@topic.Priority</td>
-                            <td>@topic.Mastery</td>
+                            <!-- <td>@topic.Priority</td>
+                            <td>@topic.Mastery</td> -->
                         @foreach (var concept in topic.Concepts){
                             <tr>
                                 <td>@concept.Name</td>
                                 <td>@concept.Priority</td>
-                                <td>@concept.Mastery</td>
+                                    <button class="btn btn-primary" @onclick="@concept.decPriority">-</button>
+                                    <button class="btn btn-primary" @onclick="@concept.incPriority">+</button>
+                                <td>@concept.Mastery
+                                    <button class="btn btn-primary" @onclick="@concept.decMastery">-</button>
+                                    <button class="btn btn-primary" @onclick="@concept.incMastery">+</button>
+                                </td>
+
                             </tr>  
                         }
                         </tr>
@@ -58,9 +63,8 @@ else
     public class CoursesRequest
     {
         public Course[] Courses { get; set; }
+        public Concept[] concepts { get; set; }
         // needs thie CoursesRequest object for
         // file to link to Concept Class for some reason
-
     }
-
 }
