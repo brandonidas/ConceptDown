@@ -10,14 +10,14 @@
 else
 {
     <table class="table">
-        <thead>
+        <!-- <thead>
             <tr>
                 <th>Date</th>
                 <th>Temp. (C)</th>
                 <th>Temp. (F)</th>
                 <th>Summary</th>
             </tr>
-        </thead>
+        </thead> -->
         <tbody>            
             @foreach (var course in courseReq.Courses)
             {
@@ -25,14 +25,21 @@ else
                     <td>@course.Name</td>
                     <td>@course.Priority</td>
                     <td>@course.Summary</td>
-                    <!-- @foreach (var topic in course.Topics) 
+                    @foreach (var topic in course.Topics) 
                     {
                         <tr>
                             <td>@topic.Name</td>
                             <td>@topic.Priority</td>
                             <td>@topic.Mastery</td>
+                        @foreach (var concept in topic.Concepts){
+                            <tr>
+                                <td>@concept.Name</td>
+                                <td>@concept.Priority</td>
+                                <td>@concept.Mastery</td>
+                            </tr>  
+                        }
                         </tr>
-                    } -->
+                    }
                 </tr>
             }
             

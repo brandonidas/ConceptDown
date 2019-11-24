@@ -1,0 +1,17 @@
+﻿
+
+@foreach (var topic in topics){
+    <tr>
+        <td>@topic.Name</td>
+        <td>@topic.Priority</td>
+        <td>@topic.Mastery</td>
+    </tr>
+}
+
+@code {
+    [Parameter]
+    public Topic[] topics { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

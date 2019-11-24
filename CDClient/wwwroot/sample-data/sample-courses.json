@@ -28,7 +28,7 @@
         ]
       },
       {
-        "name": "eukaryote cells",
+        "name": "prokaryote cells",
         "concepts": [
           {
             "name": "morphology",
@@ -58,7 +58,7 @@
     "summary": "Freezing",
     "topics": [
       {
-        "name": "eukaryote cells",
+        "name": "niche finding",
         "concepts": [
           {
             "name": "morphology",
@@ -81,7 +81,7 @@
         ]
       },
       {
-        "name": "eukaryote cells",
+        "name": "adaptive significance",
         "concepts": [
           {
             "name": "morphology",
