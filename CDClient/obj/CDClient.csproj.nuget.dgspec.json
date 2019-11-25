@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/CDClient.csproj": {}
+    "/Users/BrandonTong/Documents/GitHub/ConceptDown/CDClient/CDClient.csproj": {}
   },
   "projects": {
-    "/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/CDClient.csproj": {
+    "/Users/BrandonTong/Documents/GitHub/ConceptDown/CDClient/CDClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/CDClient.csproj",
+        "projectUniqueName": "/Users/BrandonTong/Documents/GitHub/ConceptDown/CDClient/CDClient.csproj",
         "projectName": "CDClient",
-        "projectPath": "/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/CDClient.csproj",
-        "packagesPath": "/Users/brandontong/.nuget/packages/",
-        "outputPath": "/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/",
+        "projectPath": "/Users/BrandonTong/Documents/GitHub/ConceptDown/CDClient/CDClient.csproj",
+        "packagesPath": "/Users/BrandonTong/.nuget/packages/",
+        "outputPath": "/Users/BrandonTong/Documents/GitHub/ConceptDown/CDClient/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/brandontong/.nuget/NuGet/NuGet.Config"
+          "/Users/BrandonTong/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
