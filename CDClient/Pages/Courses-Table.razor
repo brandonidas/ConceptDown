@@ -1,0 +1,68 @@
+@page "/table"
+@inject HttpClient Http
+
+<h1>Courses</h1>
+
+<button>Table Format</button>
+<button>Drop-down Format</button>
+
+@if (courseReq.Courses == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Topic</th>
+                <th>Concept</th>
+                <th>Priority</th>
+                <th>Mastery</th>
+            </tr>
+        </thead>
+        <tbody>            
+            @foreach (var course in courseReq.Courses)
+            {
+                    @foreach (var topic in course.Topics) 
+                    {
+                        @foreach (var concept in topic.Concepts)
+                        {
+                            <tr>
+                                <td>@course.Name</td>
+                                <td>@topic.Name</td>
+                                <td>@concept.Name</td>
+                                <td>@concept.Priority
+                                    <button class="btn btn-primary" @onclick="@concept.decPriority">-</button>
+                                    <button class="btn btn-primary" @onclick="@concept.incPriority">+</button>
+                                </td>
+                                <td>@concept.Mastery
+                                    <button class="btn btn-primary" @onclick="@concept.decMastery">-</button>
+                                    <button class="btn btn-primary" @onclick="@concept.incMastery">+</button>
+                                </td>
+                            </tr>
+                        }
+                    }
+            }
+            
+        </tbody>
+    </table>
+}
+
+@code {
+    private CoursesRequest courseReq = new CoursesRequest();
+
+    protected override async Task OnInitializedAsync()
+    {
+        courseReq.Courses = await Http.GetJsonAsync<Course[]>("sample-data/sample-courses.json");
+        
+    }
+    public class CoursesRequest
+    {
+        public Course[] Courses { get; set; }
+        public Concept[] concepts { get; set; }
+        // needs thie CoursesRequest object for
+        // file to link to Concept Class for some reason
+    }
+}
