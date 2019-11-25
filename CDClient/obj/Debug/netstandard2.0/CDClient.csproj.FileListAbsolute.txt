@@ -65,7 +65,6 @@
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/staticwebassets/CDClient.StaticWebAssets.xml
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/CDClient.RazorComponent.input.cache
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/App.razor.g.cs
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Concept.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Counter.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Index.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
@@ -76,7 +75,6 @@
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/CDClient.TagHelpers.output.cache
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/CDClient.RazorCoreGenerate.cache
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/App.razor.g.cs
-/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Concept.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Counter.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Index.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Shared/MainLayout.razor.g.cs
@@ -129,3 +127,7 @@
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/blazor/blazor.boot.json
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Courses.razor.g.cs
 /Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Courses.razor.g.cs
+/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/Courses-Table.razor.g.cs
+/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/Courses-Table.razor.g.cs
+/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/RazorDeclaration/Pages/ConceptComponent.razor.g.cs
+/Users/brandontong/Documents/GitHub/ConceptDown/CDClient/obj/Debug/netstandard2.0/Razor/Pages/ConceptComponent.razor.g.cs

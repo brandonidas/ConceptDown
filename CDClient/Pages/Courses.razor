@@ -3,21 +3,62 @@
 
 <h1>Courses</h1>
 
+<button>Table Format</button>
+<button>Drop-down Format</button>
+
 @if (courseReq.Courses == null)
 {
     <p><em>Loading...</em></p>
 }
 else
 {
-    <table class="table">
-        <!-- <thead>
+@foreach (var course in courseReq.Courses) 
+{
+<details>
+    <summary class="lead">@course.Name</summary>
+    <ul class="list-group">
+    @foreach (var topic in course.Topics) 
+    {
+        <li class="list-group-item">
+        <details>
+            <summary>@topic.Name</summary>
+            <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Priority</th>
+                    <th>Master</th>
+                </tr>   
+            </thead>
+            <tbody>
+            @foreach (var concept in topic.Concepts)
+            {
             <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
-        </thead> -->
+                <ConceptComponent Concept=@concept></ConceptComponent>
+                <!-- <td>@concept.Name</td>
+                <td>@concept.Priority
+                    <button class="btn btn-primary" @onclick="@concept.decPriority">-</button>
+                    <button class="btn btn-primary" @onclick="@concept.incPriority">+</button>
+                </td>
+                <td>@concept.Mastery
+                    <button class="btn btn-primary" @onclick="@concept.decMastery">-</button>
+                    <button class="btn btn-primary" @onclick="@concept.incMastery">+</button>
+                </td> -->
+            </tr>  
+            }
+            </tbody>
+            </table>
+
+        </details>
+        </li>
+    }
+    </ul>
+</details>
+
+}
+
+    <table class="table">
+
         <tbody>            
             @foreach (var course in courseReq.Courses)
             {
@@ -33,9 +74,10 @@ else
                         @foreach (var concept in topic.Concepts){
                             <tr>
                                 <td>@concept.Name</td>
-                                <td>@concept.Priority</td>
+                                <td>@concept.Priority
                                     <button class="btn btn-primary" @onclick="@concept.decPriority">-</button>
                                     <button class="btn btn-primary" @onclick="@concept.incPriority">+</button>
+                                </td>
                                 <td>@concept.Mastery
                                     <button class="btn btn-primary" @onclick="@concept.decMastery">-</button>
                                     <button class="btn btn-primary" @onclick="@concept.incMastery">+</button>

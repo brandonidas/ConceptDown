@@ -1,0 +1,17 @@
+﻿@page "/ConceptComponent"
+
+<div class="input-group">
+    <input type="text" class="form-control" placeholder=@Concept.Name
+        aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+    <div class="input-group-append" id="button-addon4">
+        <button class="btn btn-outline-danger" type="button">@Concept.Priority</button>
+        <button class="btn btn-outline-primary" type="button">@Concept.Mastery</button>
+    </div>
+</div>
+
+@code {
+
+    [Parameter] // Linker does not recognize Concept - so using abstrac class Knowde
+    public Concept Concept { get; set; }
+
+}
