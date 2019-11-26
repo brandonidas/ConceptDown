@@ -9,12 +9,14 @@ namespace CDClient
         public int Mastery { get; set; }
         public void incPriority()
         {
-            this.Priority = (this.Priority % 3) + 1;
+            if (this.Priority < 3)
+            {
+                this.Priority++;
+            }
         }
         public void decPriority()
         {
-            int tmp = this.Priority;
-            if (tmp > 0)
+            if (this.Priority > 0)
             {
                 this.Priority--;
             }

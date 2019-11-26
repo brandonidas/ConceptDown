@@ -15,7 +15,7 @@ else
 @foreach (var course in courseReq.Courses) 
 {
 <details>
-    <summary class="lead">@course.Name</summary>
+    <summary class="lead" open="True">@course.Name</summary>
     <ul class="list-group">
     @foreach (var topic in course.Topics) 
     {
@@ -35,15 +35,6 @@ else
             {
             <tr>
                 <ConceptComponent Concept=@concept></ConceptComponent>
-                <!-- <td>@concept.Name</td>
-                <td>@concept.Priority
-                    <button class="btn btn-primary" @onclick="@concept.decPriority">-</button>
-                    <button class="btn btn-primary" @onclick="@concept.incPriority">+</button>
-                </td>
-                <td>@concept.Mastery
-                    <button class="btn btn-primary" @onclick="@concept.decMastery">-</button>
-                    <button class="btn btn-primary" @onclick="@concept.incMastery">+</button>
-                </td> -->
             </tr>  
             }
             </tbody>
