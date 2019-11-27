@@ -1,1 +1,15 @@
-**/css
+# Ignore Mac system files
+.DS_store
+
+# Ignore bootstrap folder
+bootstrap
+
+# Ignore all text files
+*.css
+
+# Ignore files related to API keys
+.env
+
+# Ignore SASS config files
+.sass-cache# Ignore Mac system files
+.DS_store
