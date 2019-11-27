@@ -1,15 +1,15 @@
 # Ignore Mac system files
 .DS_store
+# Ignore css/bootstrap folder
+CDClient/wwwroot/css
 
-# Ignore bootstrap folder
-bootstrap
+component-mockup/open-iconic-master
+component-mockup/*css
 
 # Ignore all text files
 *.css
 
 # Ignore files related to API keys
 .env
-
 # Ignore SASS config files
-.sass-cache# Ignore Mac system files
-.DS_store
+.sass-cache 
