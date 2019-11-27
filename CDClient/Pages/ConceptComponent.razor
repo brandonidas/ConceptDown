@@ -1,11 +1,25 @@
 ﻿@page "/ConceptComponent"
 
 <div class="input-group">
-    <input type="text" class="form-control" placeholder=@Concept.Name
-        aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+    <input type="text" class="form-control" placeholder="@Concept.Name"
+        aria-label="Recipient's username with two button addons" 
+        aria-describedby="button-addon4">
     <div class="input-group-append" id="button-addon4">
-        <button class="btn btn-outline-danger" type="button">@Concept.Priority</button>
-        <button class="btn btn-outline-primary" type="button">@Concept.Mastery</button>
+        <button class="btn btn-danger" type="button">Priority: @Concept.Priority</button>
+        <button class="btn btn-outline-danger" type="button"
+            @onclick="@Concept.decPriority">-</button>
+        <button class="btn btn-outline-danger" type="button"
+            @onclick="@Concept.incPriority">+</button>
+        <button class="btn btn-primary" type="button">Mastery: @Concept.Mastery%</button>
+        <button class="btn btn-outline-primary" type="button"
+            @onclick="@Concept.decMastery">-</button>
+        <button class="btn btn-outline-primary" type="button"
+            @onclick="@Concept.incMastery">+</button>
+        <button class="btn btn-outline-secondary" type="button" 
+        data-toggle="collapse" data-target="#remarks1"
+        aria-expanded="false" aria-controls="collapseExample">
+        Remarks
+    </button>
     </div>
 </div>
 
